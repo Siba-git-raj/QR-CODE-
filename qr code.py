@@ -1,3 +1,5 @@
-import qrcode as qr
-img=qr.make("hello siba")
-img.save("siba details.png")
+import pyqrcode
+content = input("enter your name :-")
+QR = pyqrcode.create(content)
+QR.png("my.png",scale=5)
+print("success")
